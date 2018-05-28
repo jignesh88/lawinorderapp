@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LawInOrderApp.Infra.CorssCuttting.Identity
+namespace LawInOrderApp.Infra.CrossCutting.IoC
 {
     public class Class1
     {

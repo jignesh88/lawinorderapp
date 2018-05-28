@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LawInOrderApp.Infra.CorssCuttting.IoC
+namespace LawInOrderApp.Infra.CrossCutting.Bus
 {
     public class Class1
     {
