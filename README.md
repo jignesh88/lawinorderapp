@@ -33,6 +33,6 @@ EF > DDD > Application > API > UX(ASP.NET MVC)
 - Clone GIT repository
 - Restore Dotnet Packages
 - Make sure connection string in application.json is pointing to correct database
-- Create database called LawInOrderApp
+- Create database named "LawInOrderApp"
 - Run LawInOrderApp.UI Project
 
