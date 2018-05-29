@@ -1,9 +1,8 @@
 ﻿<Properties StartupConfiguration="{29EB7820-9955-40FD-8C9A-C2D03D7FBD0B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/LawInOrderApp.Services.Test/LawInOrderApp.Domain.Test/UnitTest1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/LawInOrderApp.Domain/CommandHandlers/CommandHandler.cs">
     <Files>
-      <File FileName="src/LawInOrderApp.Domain.Core/Properties/AssemlyInfo.cs" Line="6" Column="34" />
-      <File FileName="src/LawInOrderApp.Domain/CommandHandlers/CommandHandler.cs" Line="33" Column="9" />
-      <File FileName="src/LawInOrderApp.Domain/CommandHandlers/TimeSheetCommandHandler.cs" Line="4" Column="42" />
+      <File FileName="src/LawInOrderApp.Domain/CommandHandlers/CommandHandler.cs" Line="33" Column="1" />
+      <File FileName="src/LawInOrderApp.Domain/CommandHandlers/TimeSheetCommandHandler.cs" Line="4" Column="37" />
       <File FileName="src/LawInOrderApp.Domain/Commands/TimeSheetCommand.cs" Line="8" Column="35" />
       <File FileName="src/LawInOrderApp.Domain/Commands/CreateNewTimeSheetCommand.cs" Line="10" Column="10" />
       <File FileName="src/LawInOrderApp.Domain/EventHandlers/TimeSheetEventHandler.cs" Line="12" Column="23" />
@@ -13,20 +12,19 @@
       <File FileName="src/LawInOrderApp.Domain/Interfaces/IUnitOfWork.cs" Line="6" Column="23" />
       <File FileName="src/LawInOrderApp.Domain/Interfaces/IUser.cs" Line="10" Column="47" />
       <File FileName="src/LawInOrderApp.Domain/Models/TimeSheet.cs" Line="21" Column="21" />
-      <File FileName="src/LawInOrderApp.Domain.Core/Notifications/DomainNotificationHandler.cs" Line="12" Column="9" />
+      <File FileName="src/LawInOrderApp.Domain.Core/Notifications/DomainNotificationHandler.cs" Line="12" Column="1" />
       <File FileName="src/LawInOrderApp.Domain/Validations/TimeSheetValidation.cs" Line="15" Column="10" />
       <File FileName="src/LawInOrderApp.Domain/Validations/CreateNewTimeSheetValidation.cs" Line="13" Column="6" />
       <File FileName="src/LawInOrderApp.Domain.Core/Notifications/DomainNotification.cs" Line="6" Column="18" />
       <File FileName="src/LawInOrderApp.Infra.Data/Context/LawInOrderAppContext.cs" Line="29" Column="29" />
       <File FileName="src/LawInOrderApp.Infra.Data/Context/EventStoreSQLContext.cs" Line="19" Column="33" />
-      <File FileName="src/LawInOrderApp.Infra.Data/EventSourcing/SqlEventStore.cs" Line="12" Column="9" />
+      <File FileName="src/LawInOrderApp.Infra.Data/EventSourcing/SqlEventStore.cs" Line="12" Column="1" />
       <File FileName="src/LawInOrderApp.Infra.Data/Mapping/TimeSheetMap.cs" Line="23" Column="51" />
       <File FileName="src/LawInOrderApp.Infra.Data/Mapping/StoredEventMap.cs" Line="17" Column="48" />
-      <File FileName="src/LawInOrderApp.Infra.Data/Repository/Repository.cs" Line="24" Column="9" />
-      <File FileName="src/LawInOrderApp.Infra.Data/Repository/TimeSheetRepository.cs" Line="16" Column="9" />
-      <File FileName="src/LawInOrderApp.Infra.Data/UoW/UnitOfWork.cs" Line="16" Column="9" />
+      <File FileName="src/LawInOrderApp.Infra.Data/Repository/Repository.cs" Line="24" Column="1" />
+      <File FileName="src/LawInOrderApp.Infra.Data/Repository/TimeSheetRepository.cs" Line="16" Column="1" />
+      <File FileName="src/LawInOrderApp.Infra.Data/UoW/UnitOfWork.cs" Line="16" Column="1" />
       <File FileName="src/LawInOrderApp.Infra.Data/appsettings.json" Line="13" Column="2" />
-      <File FileName="src/LawInOrderApp.Services.Test/LawInOrderApp.Domain.Test/UnitTest1.cs" Line="8" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Src.5._220Infrastructure.LawInOrderApp.Infra.CrossCutting.IoC FirstBuild="True" />
