@@ -7,10 +7,17 @@
   <ItemGroup>
     <Folder Include="wwwroot\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Configuration\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.2.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="4.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="2.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="2.4.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,5 +26,10 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\ValuesController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LawInOrderApp.Application\LawInOrderApp.Application.csproj" />
+    <ProjectReference Include="..\LawInOrderApp.Infra.CrossCutting.Identity\LawInOrderApp.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\LawInOrderApp.Infra.CrossCutting.IoC\LawInOrderApp.Infra.CrossCutting.IoC.csproj" />
   </ItemGroup>
 </Project>

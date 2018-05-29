@@ -1,5 +1,5 @@
-﻿using System;
-using System.Security.Claims;
+﻿using System.Security.Claims;
+using System.Collections.Generic;
 namespace LawInOrderApp.Domain.Interfaces
 {
     public interface IUser
@@ -7,6 +7,6 @@ namespace LawInOrderApp.Domain.Interfaces
         string Name { get; }
         string Role { get; }
         bool IsAuthenticated();
-        IEquatable<Claim> GetClaimsIdentity();
+        IEnumerable<Claim> GetClaimsIdentity();
     }
 }

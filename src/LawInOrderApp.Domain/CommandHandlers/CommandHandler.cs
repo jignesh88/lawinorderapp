@@ -15,11 +15,11 @@ namespace LawInOrderApp.Domain.CommandHandlers
 
         public CommandHandler(IUnitOfWork unitOfWork,
                              IMediatorHandler mediator,
-                             DomainNotificationHandler notifications)
+                              INotificationHandler<DomainNotification> notifications)
         {
             _unitOfWork = unitOfWork;
             _mediator = mediator;
-            _notifications = notifications;
+            _notifications = (DomainNotificationHandler) notifications;
         }
 
         protected void NotifyValidationErrors(Command message){
