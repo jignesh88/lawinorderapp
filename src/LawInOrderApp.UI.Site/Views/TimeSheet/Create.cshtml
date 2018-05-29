@@ -1,0 +1,37 @@
+@model LawInOrderApp.Application.ViewModels.TimeSheetViewModel
+@{
+    ViewData["Title"] = "Create New timesheet";
+}
+<h2>@ViewData["Title"]</h2>
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <hr />
+        @* Replacing classic Validation Summary to Custom ViewComponent as TagHelper *@
+        <vc:summary />
+        <div class="form-group">
+            <label asp-for="HourWorked" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="HourWorked" class="form-control" />
+                <span asp-validation-for="DateWorked" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="DateWorked" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="DateWorked" class="form-control" />
+                <span asp-validation-for="DateWorked" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-info">Back to List</a>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

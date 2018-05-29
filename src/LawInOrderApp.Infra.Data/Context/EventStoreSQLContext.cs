@@ -9,11 +9,6 @@ namespace LawInOrderApp.Infra.Data.Context
 {
     public class EventStoreSQLContext : DbContext
     {
-        public EventStoreSQLContext(DbContextOptions options)
-            : base(options)
-        {
-        }
-
         public DbSet<StoredEvent> StoredEvent { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){

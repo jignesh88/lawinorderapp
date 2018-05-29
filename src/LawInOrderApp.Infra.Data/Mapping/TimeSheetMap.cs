@@ -10,6 +10,8 @@ namespace LawInOrderApp.Infra.Data.Mapping
     {
         public void Configure(EntityTypeBuilder<TimeSheet> builder)
         {
+            builder.ToTable("TimeSheet");
+
             builder.Property(t => t.Id)
                    .HasColumnName("TimeSheetId");
 
@@ -21,6 +23,10 @@ namespace LawInOrderApp.Infra.Data.Mapping
                    .HasColumnType("datetime")
                    .IsRequired()
                    .HasDefaultValue(DateTime.Now);
+
+            builder.Property(t => t.UserId)
+                   .HasColumnType("uniqueidentifier")
+                   .IsRequired();
         }
     }
 }

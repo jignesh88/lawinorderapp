@@ -8,12 +8,6 @@ namespace LawInOrderApp.Infra.Data.Context
 {
     public class LawInOrderAppContext : DbContext
     {
-        public LawInOrderAppContext(DbContextOptions options)
-            :base(options)
-        {
-
-        }
-
         public DbSet<TimeSheet> TimeSheets { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){
@@ -26,11 +20,11 @@ namespace LawInOrderApp.Infra.Data.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
             var config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json")
+                .AddJsonFile("appsettings.json")    
                 .Build();
 
             optionsBuilder.UseSqlServer(config
-                                       .GetConnectionString("DefalutConnection"
+                                       .GetConnectionString("DefaultConnection"
                                                            ));
         }
     }

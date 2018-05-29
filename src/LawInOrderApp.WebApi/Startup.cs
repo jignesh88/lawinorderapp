@@ -67,10 +67,10 @@ namespace LawInOrderApp.WebApi
                 s.SwaggerDoc("v1", new Info
                 {
                     Version = "v1",
-                    Title = "Equinox Project",
-                    Description = "Equinox API Swagger surface",
-                    Contact = new Contact { Name = "Eduardo Pires", Email = "contato@eduardopires.net.br", Url = "http://www.eduardopires.net.br" },
-                    License = new License { Name = "MIT", Url = "https://github.com/EduardoPires/EquinoxProject/blob/master/LICENSE" }
+                    Title = "LawInOrderApp Project",
+                    Description = "LawInOrderApp API Swagger surface",
+                    Contact = new Contact { Name = "Jignesh Patel", Email = "jignesh.282@gmail.com", Url = "http://www.jigneshpatel.com.au" },
+                    License = new License { Name = "MIT", Url = "" }
                 });
             });
 
@@ -108,7 +108,7 @@ namespace LawInOrderApp.WebApi
             app.UseSwagger();
             app.UseSwaggerUI(s =>
             {
-                s.SwaggerEndpoint("/swagger/v1/swagger.json", "Equinox Project API v1.1");
+                s.SwaggerEndpoint("/swagger/v1/swagger.json", "LawInOrder App Project API");
             });
         }
 

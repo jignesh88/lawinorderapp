@@ -1,0 +1,72 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.2.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="4.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LawInOrderApp.Infra.CrossCutting.Bus\LawInOrderApp.Infra.CrossCutting.Bus.csproj" />
+    <ProjectReference Include="..\LawInOrderApp.Infra.CrossCutting.Identity\LawInOrderApp.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\LawInOrderApp.Infra.CrossCutting.IoC\LawInOrderApp.Infra.CrossCutting.IoC.csproj" />
+    <ProjectReference Include="..\LawInOrderApp.Infra.Data\LawInOrderApp.Infra.Data.csproj" />
+    <ProjectReference Include="..\LawInOrderApp.Application\LawInOrderApp.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="Views\TimeSheet\" />
+    <Folder Include="Views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Account\AccessDenied.cshtml" />
+    <Content Remove="Views\Account\ConfirmEmail.cshtml" />
+    <Content Remove="Views\Account\ExternalLogin.cshtml" />
+    <Content Remove="Views\Account\ForgotPassword.cshtml" />
+    <Content Remove="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Remove="Views\Account\Lockout.cshtml" />
+    <Content Remove="Views\Account\Login.cshtml" />
+    <Content Remove="Views\Account\LoginWith2fa.cshtml" />
+    <Content Remove="Views\Account\LoginWithRecoveryCode.cshtml" />
+    <Content Remove="Views\Account\Register.cshtml" />
+    <Content Remove="Views\Account\ResetPassword.cshtml" />
+    <Content Remove="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Remove="Views\Account\SignedOut.cshtml" />
+    <Content Remove="Views\Home\Index.cshtml" />
+    <Content Remove="Views\Manage\TwoFactorAuthentication.cshtml" />
+    <Content Remove="Views\Manage\_ManageNav.cshtml" />
+    <Content Remove="Views\Shared\_LoginPartial.cshtml" />
+    <Content Remove="Views\TimeSheet\Create.cshtml" />
+    <Content Remove="Views\TimeSheet\Delete.cshtml" />
+    <Content Remove="Views\TimeSheet\Index.cshtml" />
+    <Content Remove="wwwroot\lib\qrcode.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\Account\AccessDenied.cshtml" />
+    <None Include="Views\Account\ConfirmEmail.cshtml" />
+    <None Include="Views\Account\ExternalLogin.cshtml" />
+    <None Include="Views\Account\ForgotPassword.cshtml" />
+    <None Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <None Include="Views\Account\Lockout.cshtml" />
+    <None Include="Views\Account\Login.cshtml" />
+    <None Include="Views\Account\LoginWith2fa.cshtml" />
+    <None Include="Views\Account\LoginWithRecoveryCode.cshtml" />
+    <None Include="Views\Account\Register.cshtml" />
+    <None Include="Views\Account\ResetPassword.cshtml" />
+    <None Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <None Include="Views\Account\SignedOut.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\TimeSheet\Create.cshtml" />
+    <None Include="Views\TimeSheet\Index.cshtml" />
+    <None Include="wwwroot\lib\qrcode.js" />
+  </ItemGroup>
+</Project>

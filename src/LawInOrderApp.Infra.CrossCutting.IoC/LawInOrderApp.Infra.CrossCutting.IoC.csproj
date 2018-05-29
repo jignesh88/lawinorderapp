@@ -19,5 +19,6 @@
     <ProjectReference Include="..\LawInOrderApp.Infra.Data\LawInOrderApp.Infra.Data.csproj" />
     <ProjectReference Include="..\LawInOrderApp.Infra.CrossCutting.Bus\LawInOrderApp.Infra.CrossCutting.Bus.csproj" />
     <ProjectReference Include="..\LawInOrderApp.Infra.CrossCutting.Identity\LawInOrderApp.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\LawInOrderApp.Application\LawInOrderApp.Application.csproj" />
   </ItemGroup>
 </Project>

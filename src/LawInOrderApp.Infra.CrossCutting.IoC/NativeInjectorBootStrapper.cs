@@ -17,6 +17,11 @@ using LawInOrderApp.Domain.CommandHandlers;
 using LawInOrderApp.Infra.CrossCutting.Bus;
 using LawInOrderApp.Infra.CrossCutting.Identity.Services;
 using LawInOrderApp.Infra.CrossCutting.Identity.Models;
+using LawInOrderApp.Application.Services;
+using LawInOrderApp.Application.Interfaces;
+using LawInOrderApp.Domain.Events;
+using LawInOrderApp.Domain.EventHandlers;
+using LawInOrderApp.Infra.CrossCutting.Identity.Authorization;
 
 namespace LawInOrderApp.Infra.CrossCutting.IoC
 {
@@ -32,18 +37,18 @@ namespace LawInOrderApp.Infra.CrossCutting.IoC
             services.AddScoped<IMediatorHandler, InMemoryBus>();
 
             // Asp.net authorization Polices
-            //services.AddSingleton<IAuthorizationHandler, ClaimsRequestHandler>();
+            services.AddSingleton<IAuthorizationHandler, ClaimRequirementHandler>();
 
             // Application
-
+            services.AddScoped<ITimeSheetAppService, TimeSheetAppService>();
 
             // Domain - Events
             services.AddScoped<INotificationHandler<DomainNotification>, DomainNotificationHandler>();
-
+            services.AddScoped<INotificationHandler<TimeSheetCreatedEvent>, TimeSheetEventHandler>();
 
             // Domain - Commands
-            //services.AddScoped<IRequestHandler<CreateNewTimeSheetCommand>,
-            //    TimeSheetCommandHandler>();
+            services.AddScoped<IRequestHandler<CreateNewTimeSheetCommand>,
+                TimeSheetCommandHandler>();
 
             // Infra - Data
             services.AddScoped<ITimeSheetRepository, TimeSheetRepository>();
